@@ -1,0 +1,25 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "logo.ico",
+      "sizes": "173x90",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.ico",
+      "type": "image/png",
+      "sizes": "173x90"
+    },
+    {
+      "src": "logo.ico",
+      "type": "image/png",
+      "sizes": "173x90"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

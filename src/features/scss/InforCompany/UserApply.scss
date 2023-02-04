@@ -1,0 +1,107 @@
+.userApply {
+  .content {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    &___box {
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      padding: 1rem 1.5rem 1rem 1.5rem;
+      transition: 0.5s;
+      margin-bottom: 1rem;
+      .hr {
+        height: 2px;
+        width: 100%;
+        background-color: green;
+        margin-top: 3px;
+        margin-bottom: 20px;
+      }
+      &--title {
+        font-size: 1.2rem;
+        // text-transform: capitalize;
+      }
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transform: translateY(-10px);
+      }
+      &---user {
+        padding-bottom: 10px;
+        .d-flex {
+          padding: 1rem 0;
+        }
+        &---infor {
+          margin-left: 1rem;
+          font-size: 1rem;
+        //   text-transform: capitalize;
+          color: black;
+          .td {
+            padding-right: 1rem;
+          }
+
+          .status-container {
+            display: flex;
+            gap: 0 10px;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            text-transform: none;
+
+            .btn-videocall {
+              color: #0d6efd;
+              background-color: white;
+              border: none;
+              outline: none;
+              text-decoration: none;
+              border-radius: 5px;
+              transition: 0.5s;
+              &:hover {
+                color: white;
+                background-color: #0d6efd;
+              }
+            }
+          }
+        }
+
+        &---img img {
+          &:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+              rgba(0, 0, 0, 0.25) 0px 10px 10px;
+            transform: translateY(-5px);
+          }
+        }
+
+        .row {
+          gap: 20px 0;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .btn-userApply {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    .btn-link {
+      padding: initial;
+      width: 180px;
+      height: 28px;
+      position: unset;
+    }
+    .btn-link.hidden {
+        // visibility: hidden;
+        display: none;
+    }
+  }
+  .box-textarea {
+    width: 100%;
+    resize: none;
+  }
+}
