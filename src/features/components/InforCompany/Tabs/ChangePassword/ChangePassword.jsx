@@ -23,7 +23,7 @@ export default function ChangePassword({ id }) {
             if (data.newPassword !== data.rePassword) {
                 message.warning("Nhập lại mật khẩu mới chưa chính xác!");
             } else {
-                axios.get(`http://localhost:777/changePassword/company?id=${id}&password=${data.oldPassword}`).then(ok => {
+                axios.get(`${process.env.REACT_APP_SERVER_URL}/changePassword/company?id=${id}&password=${data.oldPassword}`).then(ok => {
                     if (ok.data.data === "wrong") {
                         message.warning("Mật khẩu của bạn chưa chính xác!");
                     } else {

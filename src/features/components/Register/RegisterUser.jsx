@@ -44,7 +44,7 @@ export default function RegisterUser() {
             male,
             status: 1,
         };
-        const link = "http://localhost:777/users";
+        const link = `${process.env.REACT_APP_SERVER_URL}/users`;
         axios
             .post(link, dataUser)
             .then((ok) => {

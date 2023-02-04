@@ -49,7 +49,7 @@ export default function RegisterCompany() {
             quantity: data.quantity,
             status: 0,
         };
-        const link = "http://localhost:777/companys";
+        const link = `${process.env.REACT_APP_SERVER_URL}/companys`;
         axios
             .post(link, dataCompany)
             .then((ok) => {
